@@ -1,0 +1,271 @@
+---
+title: "Perspectivas e Teorias das Emoções"
+subtitle: "Emoções e linguagem"
+author: "Jorge Sinval"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, "css/metropolis.css", "css/metropolis-fonts.css"] #defalt colar isto ["default", "default-fonts", "css/custom-intro.css"] # ver o tema metropolis https://danilofreire.github.io/xaringan-metropolis/xaringan-metropolis.html#1 
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    nature: 
+      beforeInit: "js/macros.js"
+      highlightStyle: github
+      ratio: 4:3
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+---
+
+<style>
+
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #0f4c81;
+}
+
+.orange {
+  color: #EB811B;
+}
+</style>
+
+# Tópicos
+
+- Literatura
+
+--
+
+- Investigação atual
+
+--
+
+- Investigação futura
+
+--
+
+- Discussão
+
+```{r echo=F}
+# remotes::install_github("gadenbuie/countdown")
+countdown::countdown(minutes = 9, seconds = 00)
+library(magrittr)
+```
+
+
+---
+
+# Literatura
+
+_154 palavras únicas sobre a forma como nos sentimos._
+
+
+<img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/book.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 40%></img>
+
+[Link <sup>`r emo::ji("book")`</sup>](https://www.amazon.com/Book-Human-Emotions-Ambiguphobia-Around/dp/0316265403 "Link para o livro")
+
+---
+
+# Literatura
+
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/tiffany_watt_smith_the_history_of_human_emotions" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+
+As palavras que usamos para descrever as nossas emoções afetam o modo como nos sentimos. Porém, o significado não é rígido, muitas vezes mudam (até de forma dramática) em resposta a novas expectativas e evoluções culturais.
+
+---
+
+# Investigação atual
+
+<img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/words.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 200%></img>
+
+---
+
+# Investigação atual
+
+<img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/words2.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 200%></img>
+
+---
+
+# Investigação atual
+
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/rana_el_kaliouby_this_app_knows_how_you_feel_from_the_look_on_your_face" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+
+
+Rana el Kaliouby demonstra uma nova tecnologia que lê as expressões faciais e associando-as às emoções correspondentes. A autora sugere várias aplicações, diz ela, que podem mudar não apenas a forma como interagimos com as máquinas - mas também uns com os outros.
+
+---
+
+# Investigação atual
+
+- Uso dos dados das redes sociais
+
+--
+
+- Uso da inteligência artificial
+
+--
+
+- Avaliação subjetiva de emoções com base em palavras sem questionar as pessoas. 
+
+---
+
+# Investigação atual
+
+
+<img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/fallacy.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 40%></img>
+
+Uma variável (e.g., expressão emocional) pode-se correlacionar com duas outras variáveis (e.g., experiência emocional e uso de palavras emocionais), sem que as últimas variáveis se correlacionem entre si. Presumir uma correlação entre as últimas variáveis é um exemplo de falácia transitiva. [Link <sup>`r emo::ji("book")`</sup>](https://www.amazon.com/Book-Human-Emotions-Ambiguphobia-Around/dp/0316265403 "Link para o livro")
+
+---
+
+# Investigação atual
+
+_Pode a análise das palavras que partilhamos (online) dar um vislumbre sobre a forma como experienciamos as emoções?_
+
+
+<img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/article.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 63%></img>
+
+[Link <sup>`r emo::ji("scroll")`</sup>](http://dx.doi.org/10.1037/emo000041697 "Link para o artigo")
+
+---
+
+# Investigação atual
+
+## Um estudo de caso no Facebook
+
+<br>
+
+<br>
+<br>
+<br>
+
+
+**A identificação da experiência subjetiva da emoção é possível com a contagem do número de palavras de sobre emoções contidas nas publições nas redes sociais?**
+
+
+---
+
+# Investigação atual
+
+```{r xaringan-panelset, echo=FALSE, message=F,warning=F}
+xaringanExtra::use_panelset()
+xaringanExtra::style_panelset(panel_tab_color_active = "red")
+```
+
+.panelset[
+.panel[.panel-name[R Code]
+
+```{r panel-chunk, fig.show='hide', fig.align = "center", fig.dim=c(5, 3),fig.retina=3, out.width="100%", message=F,warning=F}
+df <- haven::read_sav("Kross et al. - 2019 - person_level.sav")
+ggstatsplot::ggcoefstats(x =  lm(Affect ~ PositiveWords + NegativeWords +HumanCoding, df))
+```
+]
+
+.panel[.panel-name[Output]
+.center[
+![](`r knitr::fig_chunk("panel-chunk", ".png")`)
+]
+]
+
+.panel[.panel-name[Análise Estatística]
+```{r xaringan-tachyons_t_test_stat_analysis, echo=FALSE, message=F,warning=F}
+xaringanExtra::use_tachyons()
+```
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+
+Análise descritiva, correlacional e de regressão. Foram analisados tanto ao nível individual (pessoa) como ao nível da publicação.
+
+Consideram-se estatisticamente significativos os resultados com $p\leq 0.05$.
+
+]]
+
+.panel[.panel-name[Resultados]
+```{r xaringan-tachyons_t_test_results, echo=FALSE, message=F,warning=F}
+xaringanExtra::use_tachyons()
+```
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+- Os relatos das pessoas sobre como se sentem ao longo do dia não predizem, nem são preditos pelo uso de palavras "emocionais" no Facebook. 
+
+- As relações significativas entre o uso de palavras sobre emoções no Facebook e afeto autorrelatado (com o aumento do nº de observações) a relação entre essas variáveis era a oposta da direção teoricamente esperada 50% das vezes
+
+- As avaliações dos juízes sobre a "emocionalidade" das publicações prediz consistentemente a forma como as pessoas se sentem em todas o estudos.
+
+
+.tr[`r emo::ji("scroll")` Kross, E., Verduyn, P., Boyer, M., Drake, B., Gainsburg, I., Vickers, B., Ybarra, O., & Jonides, J. (2019). Does counting emotion words on online social networks provide a window into people’s subjective experience of emotion? A case study on Facebook. _Emotion, 19_(1), 97–107. https://doi.org/10.1037/emo0000416 ]
+
+]]]
+
+---
+
+# Investigação futura
+
+_Virtually every psychologically based text analysis approach has started from the assumption that we can detect peoples’ emotional states by studying the emotion words they use...[but] in reviewing the various word use studies, it is striking how weakly emotion words predict people’s emotional state...taken together, it is our sense that emotion researchers should hesitate before embarking on studies that rely exclusively on the natural production of emotion words._
+
+<br>
+
+Pennebaker, J. W., Mehl, M. R., & Niederhoffer, K. G. (2003). Psychological aspects of natural language. use: Our words, our selves. _Annual Review of Psychology, 54_, 547–577. http://dx.doi.org/10.1146/annurev .psych.54.101601.145041
+
+---
+
+# Investigação futura
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(knitr.table.format = "html")
+knitr::opts_chunk$set(fig.retina=2, out.width="100%", warning = FALSE, message = FALSE)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(image_url = "img/ibs_logo.png", width = "80px")
+```
+
+
+```{r xaringan-tile-view, echo=FALSE}
+#overview
+xaringanExtra::use_tile_view()
+```
+
+--
+
+- Motivos por detrás do uso das palavras "emocionais".
+
+--
+
+- Conseguir detetar ironia
+
+--
+
+- Usos alternativos de palavras sobre emoções.
+
+--
+
+- Questões éticas...
+
+---
+
+# Discussão
+
+##Q&A
+
+```{r echo=F}
+# remotes::install_github("gadenbuie/countdown")
+countdown::countdown(minutes = 5, seconds = 00)
+```
