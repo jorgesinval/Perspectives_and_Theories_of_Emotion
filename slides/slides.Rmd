@@ -75,7 +75,7 @@ library(magrittr)
 _154 palavras únicas sobre a forma como nos sentimos._
 
 
-<img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/book.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 40%></img>
+<img src="https://i.imgur.com/RVo8c29.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 40%></img>
 
 [Link <sup>`r emo::ji("book")`</sup>](https://www.amazon.com/Book-Human-Emotions-Ambiguphobia-Around/dp/0316265403 "Link para o livro")
 
@@ -91,13 +91,13 @@ As palavras que usamos para descrever as nossas emoções afetam o modo como nos
 
 # Investigação atual
 
-<img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/words.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 200%></img>
+<img src="https://i.imgur.com/jDlK43x.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 200%></img>
 
 ---
 
 # Investigação atual
 
-<img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/words2.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 200%></img>
+<img src="https://i.imgur.com/L1iUxAp.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 200%></img>
 
 ---
 
@@ -127,7 +127,7 @@ Rana el Kaliouby demonstra uma nova tecnologia que lê as expressões faciais e 
 # Investigação atual
 
 
-<img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/fallacy.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 40%></img>
+<img src="https://i.imgur.com/WoHfd90.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 40%></img>
 
 Uma variável (e.g., expressão emocional) pode-se correlacionar com duas outras variáveis (e.g., experiência emocional e uso de palavras emocionais), sem que as últimas variáveis se correlacionem entre si. Presumir uma correlação entre as últimas variáveis é um exemplo de falácia transitiva. [Link <sup>`r emo::ji("book")`</sup>](https://www.amazon.com/Book-Human-Emotions-Ambiguphobia-Around/dp/0316265403 "Link para o livro")
 
@@ -138,7 +138,7 @@ Uma variável (e.g., expressão emocional) pode-se correlacionar com duas outras
 _Pode a análise das palavras que partilhamos (online) dar um vislumbre sobre a forma como experienciamos as emoções?_
 
 
-<img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/article.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 63%></img>
+<img src="https://i.imgur.com/UNmXLiC.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 63%></img>
 
 [Link <sup>`r emo::ji("scroll")`</sup>](http://dx.doi.org/10.1037/emo000041697 "Link para o artigo")
 
@@ -172,7 +172,8 @@ xaringanExtra::style_panelset(panel_tab_color_active = "red")
 
 ```{r panel-chunk, fig.show='hide', fig.align = "center", fig.dim=c(5, 3),fig.retina=3, out.width="100%", message=F,warning=F}
 df <- haven::read_sav("Kross et al. - 2019 - person_level.sav")
-ggstatsplot::ggcoefstats(x =  lm(Affect ~ PositiveWords + NegativeWords +HumanCoding, df))
+ggstatsplot::ggcoefstats(x = lm(formula = Affect ~ PositiveWords + NegativeWords +HumanCoding,
+                                data = df))
 ```
 ]
 

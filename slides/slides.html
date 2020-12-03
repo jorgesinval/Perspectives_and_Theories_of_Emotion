@@ -70,7 +70,7 @@ class: center, middle, inverse, title-slide
 
 - Discussão
 
-<div class="countdown" id="timer_5fc9337f" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5fc942a2" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">09</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -82,7 +82,7 @@ class: center, middle, inverse, title-slide
 _154 palavras únicas sobre a forma como nos sentimos._
 
 
-&lt;img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/book.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 40%&gt;&lt;/img&gt;
+&lt;img src="https://i.imgur.com/RVo8c29.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 40%&gt;&lt;/img&gt;
 
 [Link &lt;sup&gt;📖&lt;/sup&gt;](https://www.amazon.com/Book-Human-Emotions-Ambiguphobia-Around/dp/0316265403 "Link para o livro")
 
@@ -98,13 +98,13 @@ As palavras que usamos para descrever as nossas emoções afetam o modo como nos
 
 # Investigação atual
 
-&lt;img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/words.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 200%&gt;&lt;/img&gt;
+&lt;img src="https://i.imgur.com/jDlK43x.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 200%&gt;&lt;/img&gt;
 
 ---
 
 # Investigação atual
 
-&lt;img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/words2.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 200%&gt;&lt;/img&gt;
+&lt;img src="https://i.imgur.com/L1iUxAp.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 200%&gt;&lt;/img&gt;
 
 ---
 
@@ -134,7 +134,7 @@ Rana el Kaliouby demonstra uma nova tecnologia que lê as expressões faciais e 
 # Investigação atual
 
 
-&lt;img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/fallacy.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 40%&gt;&lt;/img&gt;
+&lt;img src="https://i.imgur.com/WoHfd90.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 40%&gt;&lt;/img&gt;
 
 Uma variável (e.g., expressão emocional) pode-se correlacionar com duas outras variáveis (e.g., experiência emocional e uso de palavras emocionais), sem que as últimas variáveis se correlacionem entre si. Presumir uma correlação entre as últimas variáveis é um exemplo de falácia transitiva. [Link &lt;sup&gt;📖&lt;/sup&gt;](https://www.amazon.com/Book-Human-Emotions-Ambiguphobia-Around/dp/0316265403 "Link para o livro")
 
@@ -145,7 +145,7 @@ Uma variável (e.g., expressão emocional) pode-se correlacionar com duas outras
 _Pode a análise das palavras que partilhamos (online) dar um vislumbre sobre a forma como experienciamos as emoções?_
 
 
-&lt;img src="https://rstudio-cld.ncg.ingrid.pt/files/MSc%20in%20Data%20Science/Perspectives%20and%20Theories%20of%20Emotion/slides/img/article.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 63%&gt;&lt;/img&gt;
+&lt;img src="https://i.imgur.com/UNmXLiC.png" style=" display: block; margin-left: auto; margin-right: auto;" width = 63%&gt;&lt;/img&gt;
 
 [Link &lt;sup&gt;📜&lt;/sup&gt;](http://dx.doi.org/10.1037/emo000041697 "Link para o artigo")
 
@@ -177,7 +177,8 @@ _Pode a análise das palavras que partilhamos (online) dar um vislumbre sobre a 
 
 ```r
 df &lt;- haven::read_sav("Kross et al. - 2019 - person_level.sav")
-ggstatsplot::ggcoefstats(x =  lm(Affect ~ PositiveWords + NegativeWords +HumanCoding, df))
+ggstatsplot::ggcoefstats(x = lm(formula = Affect ~ PositiveWords + NegativeWords +HumanCoding,
+                                data = df))
 ```
 ]
 
@@ -267,6 +268,12 @@ top:1em;right:1em;
 
 
 
+--
+
+- Motivos por detrás do uso das palavras "emocionais".
+
+--
+
 - Conseguir detetar ironia
 
 --
@@ -283,7 +290,7 @@ top:1em;right:1em;
 
 ##Q&amp;A
 
-<div class="countdown" id="timer_5fc930f5" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5fc941f0" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
     </textarea>
